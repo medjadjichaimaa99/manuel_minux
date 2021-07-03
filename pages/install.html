@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>MINUX-Manuel d'installation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-color:transparent;" > 
+            <video id="video" poster="poster.JPG" autoplay muted loop >
+               <source src="..\assets\img\post2.mp4" type="video/mp4">
+            </video>
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="../index.html">Minux</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear"> 
+          <li class="active"><a class="drop" href="#">Pages</a>
+            <ul>
+              <li class="active"><a href="install.html">Manuel d'installation</a></li>
+              <li><a href="use_ens.html">Manuel d'utilisation</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html">Accueil</a></li>
+          <li></li><li></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="overlay" >
+    <div id="breadcrumb" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <h6 class="heading" style="margin:left;">Manuel d'installation</h6>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color:#fff; width:auto; height:auto ; padding:80px 80px 0 80px;">
+  <main class="hoc container clear" style="background-color:#fff;  width:auto; height:auto;"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sidebar one_quarter first" style="background-color:#fff; height:auto;"> 
+      <!-- ################################################################################################ -->
+      <img src="..\assets\favicon.png"/>
+      <h6>Menu du manuel d'Installation : </h6>
+      <nav class="sdb_holder">
+        <ul>
+          <li><a href="#cnx" style="color:#64a19d;">Configuration au niveau de l'hyperviseur</a></li>
+          <li><a href="#nav" style="color:#64a19d;">Commancement de l'installation</a>
+          <li><a href="#lud" style="color:#64a19d;">Partitionnement des disques</a>
+          <li><a href="#educ" style="color:#64a19d;">Installation du GRUB</a>
+          <li><a href="#bm" style="color:#64a19d;">Terminaison l'installation</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content three_quarter" style="background-color:#fff;"> 
+      <!-- ################################################################################################ -->
+      <h1 id="cnx">Configuration au niveau de l'hyperviseur</h1>
+      <p>Il faut installer un hyperviseur comme "VMware" dans notre cas ou "VirtualBox" </p>
+      <center><img  src="../assets/img/vm1.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p> Il faut spécifier l'emplacement de l'image "iso" qu'on veut installer </p>
+      <center><img  src="../assets/img/vm2.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p> Vous devez spécifier le nom de la distribution, dans notre cas sa sera "Minux" </p>
+      <center><img  src="../assets/img/vm3.png" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p> Vous devez spécifier l'espace disque &agrave allouer  &agrave la distribution </p>
+      <center><img  src="../assets/img/vm4.png" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p> Enfin, cliquez sur terminer </p>
+      <center><img  src="../assets/img/vm5.png" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <br/><br/>
+      <h1 id="nav">Commencement de l'installation</h1>
+      <p>En arrivant &agrave ce niveau la, vous avez effectué toutes les configuration nécessaires au niveau de l'hyperviseur utilisé. Maintenant, démarrez la machine virtuelle. Un menu d'installation s'affiche et vous demande de choisir une option parmis les trois option .</p>
+      <p> En choisissant l'option "Tester Minux" une session live se lance en fran&ccedilais.</p>
+      <p> En choisissant l'option "Installer Minux" vous allez installer Minux sur vottre disque.</p>
+      <center><img  src="../assets/img/1.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Sélectionnez la langue parmi la liste des langues disponibles.</p>
+      <center><img  src="../assets/img/2.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Detection et mount du cd.</p>
+      <center><img  src="../assets/img/3.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Attendre le chargement des composants nécessaire &agrave l'installation et</p>
+      <p>Indiquez le nom de la distribution.</p>
+      <center><img  src="../assets/img/7.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <br/><br/>
+      <h1 id="lud">Partitionnement des disques</h1>
+      <p>Démarrage de l'outil de partitionnement.</p>
+      <center><img  src="../assets/img/99.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Terminer le partitionnement et appliquer les changement.</p>
+      <center><img  src="../assets/img/101.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Confirmer le partitionnement.</p>
+      <center><img  src="../assets/img/777.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <br/><br/>
+      <h1 id="educ">Installation du GRUB</h1>
+      <p>Choisir le péréphirique de démarrage .</p>
+      <center><img  src="../assets/img/01010second.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <p>Lancement de l'installation du programme de démarrage GRUB.</p>
+      <center><img  src="../assets/img/010101.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <br> <br>
+      <h1 id="bm">Terminaison l'installation de Minux</h1>
+      <center><img  src="../assets/img/5555.jpg" alt="" style="border:solid 4px #64a19d; width:500px;height:300px;"></center>
+      <br> <br>
+    <div class="clear"></div>
+  </main>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
